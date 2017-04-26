@@ -151,10 +151,10 @@ GeoFriend: Log In or Sign Up
 <div class="wrapper">
 <!--img class="logo" alt="GeoFriend" src=""-->
 
-<form:form method="post" action='${pageContext.request.contextPath}/loginForm' cssClass="login-form" modelAttribute="customerLogin">  
+<form:form method="post" action='${pageContext.request.contextPath}/loginForm.htm' cssClass="login-form" modelAttribute="customerLogin">  
 <%-- <form class="login-form " action="login" method="POST" > --%>
-<form:input path="email"   cssClass="login-email" id="login-email" placeholder="Email or phone number" autofocus="autofocus"/>
-<form:input path="password" name="session_password" class="login-password" id="login-password" aria-required="true" tabindex="1" placeholder="Password"/>
+<form:input path="email" cssClass="login-email" id="login-email" placeholder="Email or phone number" autofocus="autofocus"/>
+<form:input path="password" type="password" cssClass="login-password" id="login-password" aria-required="true" tabindex="1" placeholder="Password"/>
 <button type="submit" value="Sign in">Sign in</button>
 <a class="link-forgot-password" tabindex="1" href="">Forgot password?</a>
 
@@ -166,12 +166,12 @@ GeoFriend: Log In or Sign Up
 <div class="paddy"></div>
 <div class="mainBody">
 
-<form id="regForm" class="reg-form" action="" method="POST" data-jsenabled="check" data-autologin="" data-smartlock-save-on-signup="false">
+<form:form id="regForm" class="reg-form" action='${pageContext.request.contextPath}/registration.htm' modelAttribute="customerRegistration" method="POST" data-jsenabled="check" data-autologin="" data-smartlock-save-on-signup="false">
 <h2 class="title">Sign-up and have fun</h2>
 <h3 class="subtitle">Get started - it's free.</h3>
-<label for="reg-firstName">First name</label><input type="text" name="firstName" id="reg-firstname" class="reg-firstname" tabindex="1" autofocus="autofocus">
-<label for="reg-lastName">Last name</label><input type="text" tabindex="1" name="lastName" id="reg-lastname" class="reg-lastname" aria-required="true"><label for="reg-email">Email or phone number</label><input type="text" name="session_key" class="reg-email" autocapitalize="off" tabindex="1" id="reg-email" autofocus="autofocus">
-<label for="reg-password">Password (6 or more characters)</label><input type="password" name="session_password" class="reg-password" id="reg-password" aria-required="true" tabindex="1" autocomplete="new-password"><input tabindex="1" id="registration-submit" class="registration submit-button" type="submit" value="Join now"></form>
+<label for="reg-firstName">First name</label><form:input path="firstName" type="text" name="firstName" id="reg-firstname" class="reg-firstname" tabindex="1" autofocus="autofocus"/>
+<label for="reg-lastName">Last name</label><form:input path="lastName" type="text" tabindex="1" name="lastName" id="reg-lastname" class="reg-lastname" aria-required="true"/><label for="reg-email">Email or phone number</label><input type="text" name="session_key" class="reg-email" autocapitalize="off" tabindex="1" id="reg-email" autofocus="autofocus">
+<label for="reg-password">Password (6 or more characters)</label><form:input path="password" type="password" name="session_password" class="reg-password" id="reg-password" aria-required="true" tabindex="1" autocomplete="new-password"/><input tabindex="1" id="registration-submit" class="registration submit-button" type="submit" value="Join now"></form:form>
 
 </div>
 
