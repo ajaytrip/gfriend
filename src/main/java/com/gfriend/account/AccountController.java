@@ -15,7 +15,6 @@ import com.gfriend.account.beans.CustomerRegistration;
 import com.gfriend.service.AccountServices;
 
 @Controller
-
 public class AccountController {
 
 	/**
@@ -36,7 +35,7 @@ public class AccountController {
 		return "index";
 	}
 
-	@RequestMapping(name="/loginForm.htm",value="login", method = RequestMethod.POST)
+	@RequestMapping(name="/loginForm",value="loginForm", method = RequestMethod.POST)
 	public String loginForm(@ModelAttribute("customerLogin") CustomerLogin customerLogin, BindingResult result,
 			Map model) {
 		System.out.println(customerLogin.getEmail() + "" + customerLogin.getPassword());

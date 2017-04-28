@@ -151,10 +151,10 @@ GeoFriend: Log In or Sign Up
 <div class="wrapper">
 <!--img class="logo" alt="GeoFriend" src=""-->
 
-<form:form method="post" action='${pageContext.request.contextPath}/loginForm.htm' cssClass="login-form" modelAttribute="customerLogin">  
+<form:form method="POST" action='${pageContext.request.contextPath}/loginForm' cssClass="login-form" modelAttribute="customerLogin">  
 <%-- <form class="login-form " action="login" method="POST" > --%>
 <form:input path="email" cssClass="login-email" id="login-email" placeholder="Email or phone number" autofocus="autofocus"/>
-<form:input path="password" type="password" cssClass="login-password" id="login-password" aria-required="true" tabindex="1" placeholder="Password"/>
+<form:input path="password" type="text" cssClass="login-password" id="login-password" aria-required="true" tabindex="1" placeholder="Password"/>
 <button type="submit" value="Sign in">Sign in</button>
 <a class="link-forgot-password" tabindex="1" href="">Forgot password?</a>
 
