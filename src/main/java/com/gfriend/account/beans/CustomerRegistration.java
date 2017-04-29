@@ -15,12 +15,27 @@ public class CustomerRegistration {
 	/**
 	 *  This Property hold @String value
 	 */
-	private String mLogin;
+	private String mUserId;
 	
 	/**
 	 *  This Property hold @String value
 	 */
 	private String mPassword;
+
+	
+	/**
+	 * @return the userId
+	 */
+	public String getUserId() {
+		return mUserId;
+	}
+
+	/**
+	 * @param pUserId the userId to set
+	 */
+	public void setUserId(String pUserId) {
+		mUserId = pUserId;
+	}
 
 	/**
 	 * @return the firstName
@@ -51,20 +66,6 @@ public class CustomerRegistration {
 	}
 
 	/**
-	 * @return the login
-	 */
-	public String getLogin() {
-		return mLogin;
-	}
-
-	/**
-	 * @param pLogin the login to set
-	 */
-	public void setLogin(String pLogin) {
-		mLogin = pLogin;
-	}
-
-	/**
 	 * @return the password
 	 */
 	public String getPassword() {
@@ -88,12 +89,14 @@ public class CustomerRegistration {
 		builder.append(mFirstName);
 		builder.append(", mLastName=");
 		builder.append(mLastName);
-		builder.append(", mLogin=");
-		builder.append(mLogin);
+		builder.append(", mUserId=");
+		builder.append(mUserId);
 		builder.append(", mPassword=");
 		builder.append(mPassword);
 		builder.append("]");
 		return builder.toString();
 	}
+	
+	
 	
 }

@@ -40,6 +40,7 @@ public class AccountController {
 			Map model) {
 		System.out.println(customerLogin.getEmail() + "" + customerLogin.getPassword());
 		
+		
 		return "profile";
 	}
 	
@@ -47,7 +48,7 @@ public class AccountController {
 	public String customerRegistration(@ModelAttribute("customerRegistration") CustomerRegistration customerRegistration, BindingResult result,
 			Map model) {
 		System.out.println(customerRegistration);
-		
+		accountServices.registerUser(customerRegistration);
 		return "profile";
 	}
 

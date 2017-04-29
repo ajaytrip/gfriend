@@ -170,7 +170,7 @@ GeoFriend: Log In or Sign Up
 <h2 class="title">Sign-up and have fun</h2>
 <h3 class="subtitle">Get started - it's free.</h3>
 <label for="reg-firstName">First name</label><form:input path="firstName" type="text" name="firstName" id="reg-firstname" class="reg-firstname" tabindex="1" autofocus="autofocus"/>
-<label for="reg-lastName">Last name</label><form:input path="lastName" type="text" tabindex="1" name="lastName" id="reg-lastname" class="reg-lastname" aria-required="true"/><label for="reg-email">Email or phone number</label><input type="text" name="session_key" class="reg-email" autocapitalize="off" tabindex="1" id="reg-email" autofocus="autofocus">
+<label for="reg-lastName">Last name</label><form:input path="lastName" type="text" tabindex="1" name="lastName" id="reg-lastname" class="reg-lastname" aria-required="true"/><label for="reg-email">Email or phone number</label><form:input path="userId" type="text"  cssClass="reg-email" autocapitalize="off" tabindex="1" id="reg-email" autofocus="autofocus"/>
 <label for="reg-password">Password (6 or more characters)</label><form:input path="password" type="password" name="session_password" class="reg-password" id="reg-password" aria-required="true" tabindex="1" autocomplete="new-password"/><input tabindex="1" id="registration-submit" class="registration submit-button" type="submit" value="Join now"></form:form>
 
 </div>
