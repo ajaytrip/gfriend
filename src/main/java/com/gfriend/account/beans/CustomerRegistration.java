@@ -78,7 +78,6 @@ public class CustomerRegistration {
 	public void setPassword(String pPassword) {
 		mPassword = pPassword;
 	}
-
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
